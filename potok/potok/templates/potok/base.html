@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Мой сайт axaxaxaxa{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" alt="HUI EBAN">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{% static 'images/potok_logo.png' %}" alt="Логотип">
+        </div>
+        <div class="info">
+            <img src="{% static 'images/info.png' %}" alt="info">
+        </div>
+        <nav class="nav">
+            <a >Вход</a>
+            <a >Регистрация</a>
+            <a >Выход</a>
+            <a >Скидки и акции</a>
+            <a >Забронировать стол</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

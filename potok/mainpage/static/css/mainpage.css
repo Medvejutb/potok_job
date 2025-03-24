@@ -1,0 +1,107 @@
+.block1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.p1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.mainpage_logo {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    transform: translate(50%, 50%) scale(2);
+    padding: 0;
+    border: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.description {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 10%;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    border: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    max-width: 80%;
+}
+
+.transition {
+    display: block;
+    width: 100%;
+    height: 2%;
+    background-color: black;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.block2 {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);    border-style: double;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block2 p {
+    margin-top: 10%;
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    align-self: flex-start;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+
+.block3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 5% 5%;
+
+}
+
+.block3 img {
+    left: 50%;
+}
+
+.block3 p {
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+.block4 {
+    display: flex;
+    gap: 5px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 5% 0 0;
+}
+
+.block4 p {
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
