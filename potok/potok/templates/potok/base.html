@@ -16,16 +16,29 @@
             <img src="{% static 'images/info.png' %}" alt="info">
         </div>
         <nav class="nav">
-            <a >Вход</a>
-            <a >Регистрация</a>
-            <a >Выход</a>
+            {% if is_auth %}
+            <a href="{% url 'logout' %}">Выход</a>
             <a >Скидки и акции</a>
             <a >Забронировать стол</a>
+            {% else %}
+            <button id="btn_show">Вход</button>
+            <div id="pop_log" class="pop_log">
+                ВОЙТИ БЛЯ
+                <br><br>
+                <button id="btn_hide">ЗАКРЫТЬ ПОПУ</button>
+            </div>
+            <a href="{% url 'reg' %}">Регистрация</a>
+            <a href="{% url 'logout' %}">Скидки и акции</a>
+            <a >Забронировать стол</a>
+            {% endif %}
         </nav>
     </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
+    {% block scripts %}
+        <script src="{% static 'js/base.js' %}"></script>
+    {% endblock %}
 </body>
 </html>
