@@ -24,6 +24,10 @@
             <button id="btn_show">Вход</button>
             <div id="pop_log" class="pop_log">
                 ВОЙТИ БЛЯ
+                <form id="log_form">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </form>
                 <br><br>
                 <button id="btn_hide">ЗАКРЫТЬ ПОПУ</button>
             </div>
@@ -37,8 +41,5 @@
         {% block content %}
         {% endblock %}
     </main>
-    {% block scripts %}
-        <script src="{% static 'js/base.js' %}"></script>
-    {% endblock %}
 </body>
 </html>

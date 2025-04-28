@@ -43,3 +43,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const btnShow = document.getElementById('btn_show');
+const btnHide = document.getElementById('btn_hide');
+const popup = document.getElementById('pop_log');
+
+function pop_log_content (url) {
+
+    fetch(url)
+    .then((response) => response.text())
+    .then((html) => {
+        const content = popup.querySelector(".pop_log");
+        if (content) content.innerHTML = html;
+    })
+    .catch((error) => console.error("Ошибка загрузки попапа:", error));
+}
+
+btnShow.addEventListener('click', function () {
+    const url = '/users/login';
+    pop_log_content(url);
+
+    popup.style.display = 'block';
+    console.log('PRIFFKI')
+});
+
+btnHide.addEventListener('click', function () {
+    popup.style.display = 'none';
+    console.log('POKA')
+});

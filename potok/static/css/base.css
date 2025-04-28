@@ -82,23 +82,14 @@ input[type="text"] {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: blueviolet;
-    padding: 30px;
+    padding: 30%;
     border: 2px solid white;
     border-radius: 8px;
     z-index: 999;
     color: white;
 }
 
-.pop_log {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: blueviolet;
-    padding: 30px;
-    border: 2px solid white;
-    border-radius: 8px;
-    z-index: 999;
-    color: white;
+#log_form {
+    padding: 50%;
+    background-color: blue;
 }
